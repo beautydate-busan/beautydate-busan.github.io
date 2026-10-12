@@ -451,6 +451,13 @@ html,body{overflow-x:clip}
   .foreign-service-terms small{font-size:10px}
 }
 
+/* Keep the stacked design steps consistently separated, including the final item. */
+@media(max-width:650px){
+  .approach-points article,
+  .approach-points article+article,
+  .approach-points article:last-child{border:0;border-top:1px solid var(--line)}
+}
+
 @media(max-width:650px){.contact{padding-bottom:58px}}
 
 .contact-offer{display:grid;justify-items:center;gap:2px;margin:28px 0 24px}
