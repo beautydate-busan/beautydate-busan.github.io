@@ -455,7 +455,9 @@ html,body{overflow-x:clip}
 @media(max-width:650px){
   .approach-points article,
   .approach-points article+article,
-  .approach-points article:last-child{border:0;border-top:1px solid var(--line)}
+  .approach-points article:last-child{border:0;border-top:1px solid var(--line);padding-top:11px;padding-bottom:11px;align-content:start;row-gap:0}
+  .approach-points h3{margin:0 0 2px;line-height:1.45}
+  .approach-points p{margin:0;line-height:1.55}
 }
 
 @media(max-width:650px){.contact{padding-bottom:58px}}
