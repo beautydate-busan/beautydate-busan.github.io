@@ -430,3 +430,9 @@ html,body{overflow-x:clip}
 /* Keep the main editorial headings consistent across sections. */
 .hero-message h2,.approach-intro h2,.concerns-heading h2,.design-film-copy h2,.director-copy h2,.process-grid>h2,.works-title h2,.faq-heading h2,.recommend-content h2,.visit-card h2,.offer-copy h2,.contact-inner h2{font-family:'Noto Serif KR','Playfair Display',serif;font-size:clamp(40px,5.2vw,68px);font-weight:300;line-height:1.12;letter-spacing:-.065em}
 @media(max-width:650px){.hero-message h2,.approach-intro h2,.concerns-heading h2,.design-film-copy h2,.director-copy h2,.process-grid>h2,.works-title h2,.faq-heading h2,.recommend-content h2,.visit-card h2,.offer-copy h2,.contact-inner h2{font-size:clamp(31px,8.4vw,42px);line-height:1.14;letter-spacing:-.065em}}
+
+/* Give the event price a little more emphasis and breathing room before booking. */
+.hero-offer strong{font-size:clamp(28px,3vw,38px)}
+.hero-actions{margin-top:22px}
+@media(max-width:650px){.hero-offer strong{font-size:30px}.hero-actions{margin-top:20px}}
+@media(max-width:380px){.hero-offer strong{font-size:28px}}
