@@ -176,12 +176,16 @@ document.querySelectorAll('.offer-price .offer-actions a').forEach((button,index
 
 function setLanguage(lang){
   const dict=copy[lang]||copy.ko;
+  const keepCommaWithFollowingText=new Set(['approachText','approachTwoText','step2Text']);
   document.documentElement.lang=lang;
   document.querySelectorAll('[data-i18n]').forEach(el=>{
     const key=el.dataset.i18n;
     if(dict[key]){
       const safeText=dict[key].replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
-      el.innerHTML=safeText.replace(/([,，、])\s*/g,'$1<br>');
+      const key=el.dataset.i18n;
+      el.innerHTML=keepCommaWithFollowingText.has(key)
+        ?safeText.replace(/([,，、])\s*/g,'$1\u00a0')
+        :safeText.replace(/([,，、])\s*/g,'$1<br>');
     }
   });
   document.querySelector('meta[name="description"]').content=dict.description;
