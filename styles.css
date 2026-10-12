@@ -415,6 +415,42 @@ html,body{overflow-x:clip}
 @media(max-width:650px){.hero-offer{gap:9px;margin-top:12px}.hero-offer span{font-size:9px}.hero-offer strong{font-size:27px}.hero-actions{margin-top:11px}}
 @media(max-width:380px){.hero-offer{margin-top:9px}.hero-offer strong{font-size:24px}}
 
+/* Bring supporting copy and labels closer to the scale of the editorial headings. */
+.section-heading .eyebrow{font-size:11px;letter-spacing:.16em}
+.section-heading>span{font-size:11px}
+.hero-message>p:not(.eyebrow),
+.approach-intro>p,.concerns-heading>p,.faq-heading>p,
+.visit-card>div>p:not(.eyebrow),.design-film-copy>p:not(.eyebrow),
+.director-copy>p:not(.eyebrow),.works-title>p{font-size:15px;line-height:1.9}
+.approach-points p,.faq-list details p{font-size:14px;line-height:1.85}
+.concerns-list p{font-size:15px;line-height:1.8}
+.recommend-content li{font-size:15px;line-height:1.75;padding-top:18px;padding-bottom:18px}
+.visit-details span{font-size:10px}
+.visit-details b{font-size:13px;line-height:1.65}
+.hero-offer span{font-size:12px}
+.film-caption{font-size:11px}
+.foreign-service-grid>div{font-size:12px}
+.foreign-service-terms{font-size:13px;line-height:1.8}
+.foreign-service-terms small{font-size:11px}
+@media(max-width:650px){
+  .section-heading .eyebrow{font-size:10px}
+  .section-heading>span{font-size:10px}
+  .hero-message>p:not(.eyebrow),
+  .approach-intro>p,.concerns-heading>p,.faq-heading>p,
+  .visit-card>div>p:not(.eyebrow),.design-film-copy>p:not(.eyebrow),
+  .director-copy>p:not(.eyebrow),.works-title>p{font-size:14px;line-height:1.85}
+  .approach-points p,.faq-list details p{font-size:13px}
+  .concerns-list p{font-size:13px;line-height:1.75}
+  .recommend-content li{font-size:14px;line-height:1.7;padding-top:16px;padding-bottom:16px}
+  .visit-details span{font-size:9px}
+  .visit-details b{font-size:12px}
+  .hero-offer span{font-size:10px}
+  .film-caption{font-size:10px}
+  .foreign-service-grid>div{font-size:11px}
+  .foreign-service-terms{font-size:12px}
+  .foreign-service-terms small{font-size:10px}
+}
+
 @media(max-width:650px){.contact{padding-bottom:58px}}
 
 .contact-offer{display:grid;justify-items:center;gap:2px;margin:28px 0 24px}
