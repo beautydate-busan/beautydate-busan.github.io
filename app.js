@@ -777,7 +777,7 @@ if(directorFilm){
 }
 
 document.addEventListener('click',event=>{
-  const target=event.target instanceof Element?event.target.closest('a,button'):null;
+  const target=event.target instanceof Element?event.target.closest('a,button,summary,[role="button"]'):null;
   if(!target||typeof window.fbq!=='function')return;
   const label=(target.innerText||target.getAttribute('aria-label')||target.dataset.i18n||'').replace(/\s+/g,' ').trim().slice(0,100);
   const section=target.closest('section')?.id||'header';
