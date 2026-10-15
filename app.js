@@ -453,6 +453,65 @@ Object.assign(copy.en,{
   instagramInquiry:'Message on Instagram'
 });
 
+/* ==========================================================
+   추가 수정 (2차) — 프리미엄 눈썹문신 · 시술 종류 · 주소/길안내 · 영업시간
+   붙여넣는 위치: 1차로 붙인 블록 "바로 아래"
+                 (= const names={'ko':'KO', ... 줄 바로 위)
+   ========================================================== */
+
+/* ---------------- 한국어: 주소·길안내만 (가격·이벤트 문구는 그대로) ---------------- */
+Object.assign(copy.ko,{
+  visitMeta:'초량역 2번 출구 도보 4분 · 부산역(KTX) 바로 옆',
+  visitText:'부산역 옆 아스티호텔 상가 1층 텐퍼센트 커피 맞은편 건물로 들어와 엘리베이터를 타고 5층에서 내리신 후 안내판을 따라 오시면 돼요.',
+  addressPending:'부산 동구 중앙대로214번길 3-12 504호',
+  hoursPending:'월–금 10:00–20:00, 토 10:00–18:00, 매주 일요일 정기휴무'
+});
+
+/* ---------------- 日本語 ---------------- */
+Object.assign(copy.ja,{
+  description:'釜山駅近くのアートメイクサロン「Beautydate」。チョ・スヨン院長が一人ひとりの顔立ちに合わせて、韓国式プレミアム眉アートメイクをデザインします。',
+  navOffer:'プレミアム眉',
+  heroOfferLabel:'韓国式プレミアム眉アートメイク',
+  foreignEventKicker:'BEAUTYDATE · PREMIUM',
+  foreignPremiumTitle:'韓国式プレミアム眉アートメイク',
+  foreignPremiumText:'メニューの詳細とご予約は、LINEまたはInstagramからお気軽にお問い合わせください。',
+  visitMeta:'釜山駅・草梁駅からすぐ',
+  visitText:'KTX釜山駅のすぐそばです。ASTIホテル1階の「10% Coffee」向かいの建物に入り、エレベーターで5階へ。案内表示に沿ってお越しください。タクシーでは「부산 동구 중앙대로214번길 3-12」とお見せください。',
+  addressPending:'釜山広域市 東区 中央大路214番キル 3-12 504号（地下鉄1号線 草梁駅2番出口から徒歩約4分）',
+  hoursPending:'月〜金 10:00–20:00、土 10:00–18:00、日曜定休',
+  footerNotice:'韓国・釜山 東区 · TEL +82-10-7597-8444'
+});
+
+/* ---------------- 繁體中文（台灣） ---------------- */
+Object.assign(copy['zh-TW'],{
+  description:'釜山站附近的韓式半永久眉工作室 Beautydate。趙秀妍老師依照每個人的臉型與眼型，量身設計韓式頂級半永久眉。',
+  navOffer:'頂級眉型',
+  heroTitle:'想做韓式半永久眉，卻還在猶豫嗎？',
+  heroOfferLabel:'韓式頂級半永久眉',
+  foreignEventKicker:'BEAUTYDATE · PREMIUM',
+  foreignPremiumTitle:'韓式頂級半永久眉',
+  foreignPremiumText:'服務內容與預約方式，歡迎透過 LINE 或 Instagram 洽詢。',
+  visitMeta:'釜山站・草梁站步行即達',
+  visitText:'就在 KTX 釜山站旁。走進 ASTI 飯店1樓「10% Coffee」對面的大樓，搭電梯到5樓，再依指標前往即可。搭計程車時可出示韓文地址「부산 동구 중앙대로214번길 3-12」。',
+  addressPending:'釜山廣域市 東區 中央大路214番街 3-12 504號（地鐵1號線 草梁站2號出口步行約4分鐘）',
+  hoursPending:'週一至週五 10:00–20:00，週六 10:00–18:00，週日公休',
+  footerNotice:'韓國釜山 東區 · 電話 +82-10-7597-8444'
+});
+
+/* ---------------- English ---------------- */
+Object.assign(copy.en,{
+  description:'Beautydate is a semi-permanent brow studio near Busan Station. Director Suyeon Cho designs Korean premium semi-permanent brows tailored to your face.',
+  navOffer:'Premium brows',
+  heroOfferLabel:'KOREAN PREMIUM SEMI-PERMANENT BROWS',
+  foreignEventKicker:'BEAUTYDATE · PREMIUM',
+  foreignPremiumTitle:'Korean Premium Semi-Permanent Brows',
+  foreignPremiumText:'For treatment details and bookings, message us on WhatsApp or Instagram.',
+  visitMeta:'Steps from Busan Station',
+  visitText:'We’re right next to Busan Station (KTX). Enter the building across from 10% Coffee on the ground floor of ASTI Hotel. Take the elevator to the 5th floor and follow the signs. Taxi drivers can use this address: 부산 동구 중앙대로214번길 3-12',
+  addressPending:'Room 504, 3-12 Jungang-daero 214beon-gil, Dong-gu, Busan (4 min walk from Choryang Station Exit 2, Line 1)',
+  hoursPending:'Mon–Fri 10:00–20:00, Sat 10:00–18:00, Closed on Sundays',
+  footerNotice:'Dong-gu · Busan · Tel +82-10-7597-8444'
+});
 const names={'ko':'KO','ja':'日本語','zh-TW':'繁體','en':'EN'};
 const langButtons=[...document.querySelectorAll('[data-lang]')];
 document.querySelectorAll('.offer-price .offer-actions a').forEach((button,index)=>{
