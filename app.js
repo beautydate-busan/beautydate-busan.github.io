@@ -57,10 +57,10 @@ Object.assign(copy['zh-TW'],{directorText:'我是趙秀妍。從事半永久眉�
 Object.assign(copy.en,{directorText:'I am Suyeon Cho. I have 12 years of experience in semi-permanent brow treatment and have run Beautydate for 8 years. Meeting many different faces has taught me that one shape does not suit everyone. I take time to consider your features and natural brows, then review the design with you.',recommendMeta:'Four things to check before booking'});
 Object.assign(copy.ko,{heroOfferLabel:'반영구 눈썹 이벤트'});
 Object.assign(copy.ja,{heroOfferLabel:'プレミアムイベント'});
-Object.assign(copy['zh-TW'],{heroOfferLabel:'眉部尊榮專案'});
+Object.assign(copy['zh-TW'],{heroOfferLabel:'眉毛尊榮體驗活動'});
 Object.assign(copy.en,{heroOfferLabel:'PREMIUM EVENT'});
 Object.assign(copy.ja,{foreignEventKicker:'BEAUTYDATE · ご案内',foreignPremiumTitle:'プレミアムイベント',foreignPremiumText:'イベント内容やご予約について、お気軽にお問い合わせください。',lineInquiry:'LINEでお問い合わせ',instagramInquiry:'Instagramでお問い合わせ'});
-Object.assign(copy['zh-TW'],{foreignEventKicker:'BEAUTYDATE · 活動資訊',foreignPremiumTitle:'眉部尊榮專案',foreignPremiumText:'活動內容與預約方式，歡迎透過以下管道洽詢。',lineInquiry:'透過 LINE 洽詢',instagramInquiry:'透過 Instagram 洽詢'});
+Object.assign(copy['zh-TW'],{foreignEventKicker:'BEAUTYDATE · 活動資訊',foreignPremiumTitle:'眉毛尊榮體驗活動',foreignPremiumText:'活動內容與預約方式，歡迎透過以下管道洽詢。',lineInquiry:'LINE 諮詢',instagramInquiry:'Instagram 諮詢'});
 Object.assign(copy.en,{foreignEventKicker:'BEAUTYDATE · SPECIAL OFFER',foreignPremiumTitle:'Premium Event',foreignPremiumText:'For event details and booking, please contact us.',lineInquiry:'Enquire on LINE',instagramInquiry:'Enquire on Instagram',whatsappInquiry:'Enquire on WhatsApp'});
 Object.assign(copy.ko,{
   heroTitle:'눈썹문신, 아직 고민 중이신가요?',
