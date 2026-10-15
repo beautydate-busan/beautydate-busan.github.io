@@ -473,11 +473,15 @@ html,body{overflow-x:clip}
 html:not([lang="ko"]) .contact-offer{display:none!important}
 html:not([lang="ko"]) .contact .foreign-service-card{grid-column:auto;grid-row:auto;width:min(100%,650px);padding:26px 28px;border-color:#585853;background:#1d1d1b}
 .foreign-event-kicker{margin:0 0 12px;color:#b8b7b1;font-size:10px;font-weight:600;letter-spacing:.16em}
-.foreign-service-card h3{margin:0;color:#f5f4f0;font-family:'Noto Serif KR','Playfair Display',serif;font-size:clamp(25px,3vw,34px);font-weight:400;letter-spacing:-.035em}
+.foreign-service-card h3{position:relative;display:table;margin:0;padding-bottom:13px;color:#f5f4f0;font-family:'Noto Serif KR','Playfair Display',serif;font-size:clamp(30px,4.5vw,44px);font-weight:400;line-height:1.12;letter-spacing:-.045em;animation:premium-title-in .75s cubic-bezier(.2,.7,.25,1) both}
+.foreign-service-card h3::after{content:"";position:absolute;left:0;bottom:0;width:54px;height:2px;background:#d8c9a8;transform-origin:left;animation:premium-rule-in .85s .18s cubic-bezier(.2,.7,.25,1) both}
 .foreign-event-copy{margin:10px 0 0;color:#c6c5bf;font-size:14px;line-height:1.7}
 .foreign-service-actions{padding-top:22px}
 .foreign-service-actions a{min-width:0;min-height:56px;font-size:13px;white-space:normal;line-height:1.35}
 @media(max-width:650px){html:not([lang="ko"]) .contact .foreign-service-card{padding:22px 18px}.foreign-event-kicker{font-size:9px}.foreign-event-copy{font-size:13px}.foreign-service-actions{gap:8px;padding-top:18px}.foreign-service-actions a{min-height:54px;padding:0 8px;font-size:11px}}
+@keyframes premium-title-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes premium-rule-in{from{opacity:.35;transform:scaleX(.15)}to{opacity:1;transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){.foreign-service-card h3,.foreign-service-card h3::after{animation:none}}
 
 @media(max-width:650px){.hero-message h2{font-size:clamp(30px,8.2vw,42px);line-height:1.08;max-width:100%;letter-spacing:-.065em}}
 
