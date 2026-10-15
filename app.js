@@ -170,6 +170,289 @@ Object.assign(copy.en,{
   recommendLabel:'BEFORE YOU BOOK',recommendMeta:'A few things to check beyond price',recommendTitle:'Check these details before choosing a studio.',recommendOne:'Do they listen to your concerns and preferences?',recommendTwo:'Can you review and adjust the design before treatment?',recommendThree:'Do they consider your features and existing brows?',recommendFour:'Can you confirm pricing and retouch terms in advance?',
   eventKicker:'BEAUTYDATE · EVENT',eventTitle:'Brow design event',eventIntro:'Director Suyeon Cho offers one-to-one consultation and reviews the design before treatment.',contactTitle:'You do not need to know what suits you yet, let us talk first.',contactText:'We can look at your current brows and preferences together, and answer questions before you book.'
 });
+/* ==========================================================
+   외국어(일본어·대만어·영어) 최종 번역본
+   붙여넣는 위치: app.js 에서  const names={'ko':'KO', ...  줄 "바로 위"
+   (기존 번역은 그대로 두고, 이 블록이 마지막에 덮어씁니다)
+   ========================================================== */
+
+/* ---------------- 日本語 ---------------- */
+Object.assign(copy.ja,{
+  description:'釜山のアートメイクサロン「Beautydate」。チョ・スヨン院長が一人ひとりの顔立ちに合わせて、自然な眉アートメイクをデザインします。',
+  navWorks:'施術例',navDirector:'院長紹介',navProcess:'施術の流れ',navOffer:'キャンペーン',
+  quickDesign:'一人ひとりに合わせた眉デザイン',
+  heroTitle:'眉アートメイク、まだ迷っていますか？',
+  heroText:'自分に似合うか不安なら、まずはチョ・スヨン院長にご相談ください。',
+  heroOfferLabel:'眉アートメイク特別キャンペーン',
+
+  concernsLabel:'01 — こんなお悩みはありませんか？',
+  concernsMeta:'初めての方も、不安な気持ちからお聞かせください',
+  concernsTitle:'眉のこと、ひとりで悩んでいませんか？',
+  concernsText:'左右差が気になる。濃くなりすぎないか心配。どんな形が似合うか分からない。そんなお悩みもお気軽にご相談ください。',
+  concernOne:'左右の眉のバランスがなかなか揃わない。',
+  concernTwo:'すき間を描き足すと濃く見えそうで心配。',
+  concernThree:'毎朝の眉メイクの時間を減らしたい。',
+  concernFour:'自分の顔に似合う形が分からない。',
+  concernsFoot:'まずはお悩みを伺い、本当に施術が必要かを一緒に考えます。',
+
+  approachLabel:'02 — BEAUTYDATE DESIGN',
+  approachMeta:'チョ・スヨン院長によるマンツーマンデザイン',
+  approachTitle:'流行よりも、今のお顔とのバランスを大切に。',
+  approachText:'顔立ちや目元、自眉の流れを見て、自然になじむデザインをご提案します。',
+  approachOneTitle:'ご希望を伺います',approachOneText:'普段のメイクや気になっている点をお聞きします。',
+  approachTwoTitle:'お顔と眉を確認します',approachTwoText:'目元や肌、自眉の状態を一緒に確認します。',
+  approachThreeTitle:'施術前に一緒に確認します',approachThreeText:'先にデザインをご覧いただき、ご希望に合わせて調整します。',
+
+  filmLabel:'カウンセリングから施術まで',
+  filmTitle:'しっかり相談し、デザインを確認してから施術します。',
+  filmText:'2本の動画で、Beautydateのカウンセリングと施術の流れをご覧いただけます。',
+
+  directorLabel:'03 — チョ・スヨン院長',
+  directorMeta:'アートメイク歴12年 · サロン運営8年',
+  directorEyebrow:'DIRECTOR · SUYEON CHO',
+  directorTitle:'12年の経験を、お一人おひとりのために。',
+  directorText:'お顔立ちと自眉の状態を丁寧に見極め、デザインを一緒に確認しながら進めます。アートメイク歴12年とBeautydate運営8年の経験をもとに、落ち着いてご相談を承ります。',
+  yearsService:'年の施術経験',yearsStudio:'年のサロン運営',
+
+  processLabel:'04 — 施術の流れ',
+  processMeta:'カウンセリングからアフターケアのご案内まで',
+  processTitle:'すぐには施術しません。まずはお話を伺います。',
+  step1Title:'カウンセリング',step1Text:'ご希望の雰囲気や普段の眉のお悩みを伺います。',
+  step2Title:'状態の確認',step2Text:'顔立ちや目元、肌と自眉の状態を一緒に確認します。',
+  step3Title:'デザインの調整',step3Text:'施術前に形を確認し、ご希望に合わせて調整します。',
+  step4Title:'施術とアフターケア',step4Text:'確認したデザインで施術し、施術後のケア方法をご案内します。',
+
+  worksLabel:'実際の施術例',worksMeta:'Beautydateで手がけたデザイン',
+  worksTitle:'実際の仕上がりをご覧ください。',
+  worksText:'仕上がりは肌質や自眉の状態によって異なります。',
+  galleryFootnote:'実際の施術例です。仕上がりには個人差があります。',
+
+  faqLabel:'05 — ご予約前のよくある質問',
+  faqMeta:'迷っている方からよくいただく質問',
+  faqTitle:'決める前に、よくある質問をご確認ください。',
+  faqText:'痛みやデザイン、施術が本当に必要かについてお答えします。',
+  faqOneQ:'施術は痛いですか？',
+  faqOneA:'痛みの感じ方には個人差があります。不安な点はカウンセリング時にお伝えください。施術中もこまめに様子を確認します。',
+  faqTwoQ:'濃すぎたり不自然になったりしませんか？',
+  faqTwoA:'施術前にデザインを一緒に確認し調整します。仕上がりは肌質や自眉の状態によって異なります。',
+  faqThreeQ:'私に施術は必要でしょうか？',
+  faqThreeA:'今のお悩みとご希望を伺ってから一緒に考えます。急いで決める必要はありません。',
+  faqFourQ:'リタッチの期間や料金は？',
+  faqFourA:'仕上がりには個人差があります。リタッチの期間と料金は、ご予約前にLINEまたはInstagramでお問い合わせください。',
+
+  recommendLabel:'サロン選びのチェックポイント',
+  recommendMeta:'料金とあわせてご確認ください',
+  recommendTitle:'サロンを選ぶ前に、ここをチェック。',
+  recommendOne:'お悩みやご希望を丁寧に聞いてくれるか',
+  recommendTwo:'施術前にデザインを一緒に確認・調整できるか',
+  recommendThree:'顔立ちや自眉の状態を見てくれるか',
+  recommendFour:'料金やリタッチ条件を事前に説明してくれるか',
+
+  visitMeta:'ご来店をお待ちしております',
+  visitTitle:'釜山でお待ちしております。',
+  visitText:'詳しい住所と営業時間は、ご予約時にご案内します。',
+  addressLabel:'住所',addressPending:'韓国・釜山（詳しい住所はご予約時にご案内）',
+  hoursLabel:'営業時間',hoursPending:'ご予約時にご案内します',
+
+  contactTitle:'似合う形が分からなくても大丈夫。まずはお気軽にご相談ください。',
+  contactText:'今の眉とご希望を一緒に確認し、ご予約前の疑問にもお答えします。',
+  footerName:'Beautydate · チョ・スヨン院長',
+  footerNotice:'韓国・釜山 · TEL +82-10-7597-8444',
+  backTop:'ページトップへ ↑',
+  mobileBookingPrompt:'ご予約・お問い合わせ',
+
+  foreignEventKicker:'BEAUTYDATE · キャンペーン',
+  foreignPremiumTitle:'眉アートメイク特別キャンペーン',
+  foreignPremiumText:'キャンペーン内容とご予約は、LINEまたはInstagramからお気軽にお問い合わせください。',
+  lineInquiry:'LINEで問い合わせる',
+  instagramInquiry:'Instagramで問い合わせる'
+});
+
+/* ---------------- 繁體中文（台灣） ---------------- */
+Object.assign(copy['zh-TW'],{
+  description:'釜山霧眉工作室 Beautydate。趙秀妍老師依照每個人的臉型與眼型，設計自然的韓式半永久眉。',
+  navWorks:'作品案例',navDirector:'老師介紹',navProcess:'服務流程',navOffer:'限時優惠',
+  quickDesign:'依臉型量身設計眉型',
+  heroTitle:'想做霧眉，卻還在猶豫嗎？',
+  heroText:'不確定適不適合自己，先和趙秀妍老師聊聊吧。',
+  heroOfferLabel:'韓式霧眉限時優惠',
+
+  concernsLabel:'01 — 你也有這些困擾嗎？',
+  concernsMeta:'第一次做眉，先說說你的擔心',
+  concernsTitle:'眉毛的煩惱，還在一個人糾結嗎？',
+  concernsText:'左右不對稱。擔心補滿後顏色太深。不知道哪種眉型適合自己。這些困擾都可以先和我們聊聊。',
+  concernOne:'左右眉毛總是畫不對稱。',
+  concernTwo:'擔心補滿空隙後看起來太濃。',
+  concernThree:'想減少每天早上畫眉的時間。',
+  concernFour:'不知道哪種眉型適合自己的臉。',
+  concernsFoot:'我們會先聽你的困擾，再一起判斷是否需要施作。',
+
+  approachLabel:'02 — BEAUTYDATE DESIGN',
+  approachMeta:'趙秀妍老師一對一設計',
+  approachTitle:'比起流行眉型，先看你的臉部比例。',
+  approachText:'觀察臉型、眼型與原生眉的走向，提出自然又適合你的設計。',
+  approachOneTitle:'了解你想要的感覺',approachOneText:'先聊聊平常的妝容與在意的地方。',
+  approachTwoTitle:'觀察臉型與眉毛',approachTwoText:'一起確認眼型、膚況與原生眉狀態。',
+  approachThreeTitle:'施作前一起確認',approachThreeText:'先看設計，再依照你的想法調整。',
+
+  filmLabel:'從諮詢到施作',
+  filmTitle:'充分諮詢並確認設計後，才開始施作。',
+  filmText:'透過兩支影片，看看 Beautydate 的諮詢與施作過程。',
+
+  directorLabel:'03 — 趙秀妍老師',
+  directorMeta:'半永久眉經驗12年 · 經營 Beautydate 8年',
+  directorEyebrow:'DIRECTOR · SUYEON CHO',
+  directorTitle:'12年經驗，為每個人量身設計。',
+  directorText:'趙秀妍老師會仔細觀察臉型、眼型與原生眉，和你一起確認設計後才施作。擁有12年半永久眉經驗，經營 Beautydate 已8年，總是耐心為你諮詢。',
+  yearsService:'年施作經驗',yearsStudio:'年開店經營',
+
+  processLabel:'04 — 施作流程',
+  processMeta:'從諮詢到術後照護說明',
+  processTitle:'不急著施作，先好好聽你說。',
+  step1Title:'諮詢',step1Text:'先了解你想要的感覺與平常畫眉的困擾。',
+  step2Title:'確認狀態',step2Text:'一起觀察臉型、眼型、膚況與原生眉。',
+  step3Title:'調整設計',step3Text:'施作前先確認眉型，並依你的想法調整。',
+  step4Title:'施作與術後說明',step4Text:'依照確認好的設計施作，並說明術後照護方式。',
+
+  worksLabel:'實際施作案例',worksMeta:'Beautydate 的設計作品',
+  worksTitle:'看看實際施作成果。',
+  worksText:'成果會因膚況與原生眉狀態而有所不同。',
+  galleryFootnote:'照片為實際施作案例，成果因人而異。',
+
+  faqLabel:'05 — 預約前常見問題',
+  faqMeta:'先解答讓你猶豫的問題',
+  faqTitle:'做決定之前，先看看常見問題。',
+  faqText:'關於疼痛感、眉型設計，以及是否需要施作。',
+  faqOneQ:'做眉會痛嗎？',
+  faqOneA:'每個人對疼痛的感受不同。有任何擔心請在諮詢時告訴我們，施作過程中也會隨時確認你的狀況。',
+  faqTwoQ:'會不會太濃或不自然？',
+  faqTwoA:'施作前會一起確認並調整眉型。成果也會因膚況與原生眉狀態而不同。',
+  faqThreeQ:'我真的需要做眉嗎？',
+  faqThreeA:'我們會先了解你目前的困擾與期待，再一起討論。不用急著做決定。',
+  faqFourQ:'補色期間與費用怎麼算？',
+  faqFourA:'成果因人而異。補色期間與費用，請於預約前透過 LINE 或 Instagram 洽詢。',
+
+  recommendLabel:'挑選工作室的重點',
+  recommendMeta:'除了價格，也請確認這些',
+  recommendTitle:'選擇工作室前，先確認這幾點。',
+  recommendOne:'是否仔細聆聽你的困擾與期待',
+  recommendTwo:'施作前能否一起確認並調整眉型',
+  recommendThree:'是否會觀察臉型與原生眉狀態',
+  recommendFour:'是否事先說明價格與補色條件',
+
+  visitMeta:'期待與你見面',
+  visitTitle:'我們在釜山等你。',
+  visitText:'詳細地址與營業時間，將於預約時告知。',
+  addressLabel:'地址',addressPending:'韓國釜山（詳細地址於預約時告知）',
+  hoursLabel:'營業時間',hoursPending:'預約時告知',
+
+  contactTitle:'不知道適合什麼眉型也沒關係，先來聊聊吧。',
+  contactText:'一起看看你現在的眉毛與想要的感覺，也為你解答預約前的疑問。',
+  footerName:'Beautydate · 趙秀妍老師',
+  footerNotice:'韓國釜山 · 電話 +82-10-7597-8444',
+  backTop:'回到頂部 ↑',
+  mobileBookingPrompt:'預約・諮詢',
+
+  foreignEventKicker:'BEAUTYDATE · 限時優惠',
+  foreignPremiumTitle:'韓式霧眉限時優惠',
+  foreignPremiumText:'優惠內容與預約方式，歡迎透過 LINE 或 Instagram 洽詢。',
+  lineInquiry:'LINE 諮詢',
+  instagramInquiry:'Instagram 諮詢'
+});
+
+/* ---------------- English ---------------- */
+Object.assign(copy.en,{
+  description:'Beautydate is a semi-permanent brow studio in Busan, Korea. Director Suyeon Cho designs natural brow tattoos tailored to your face.',
+  navWorks:'Our work',navDirector:'About Suyeon',navProcess:'How it works',navOffer:'Special offer',
+  quickDesign:'Brows designed for your face',
+  heroTitle:'Thinking about a brow tattoo, but not sure yet?',
+  heroText:'Talk it through with Director Suyeon Cho before you decide.',
+  heroOfferLabel:'SPECIAL OFFER',
+
+  concernsLabel:'01 — SOUND FAMILIAR?',
+  concernsMeta:'First time? Start with what’s on your mind',
+  concernsTitle:'Still on the fence about your brows?',
+  concernsText:'Uneven brows. Worried they’ll look too dark. No idea what shape suits you. Whatever it is, we’re happy to talk it through.',
+  concernOne:'I can never get both brows to match.',
+  concernTwo:'I’m worried filling in the gaps will look too heavy.',
+  concernThree:'I want to spend less time on my brows every morning.',
+  concernFour:'I’m not sure what shape suits my face.',
+  concernsFoot:'We hear you out first and help you decide if treatment is right for you.',
+
+  approachLabel:'02 — BEAUTYDATE DESIGN',
+  approachMeta:'One-on-one design with Suyeon Cho',
+  approachTitle:'Your features first, trends second.',
+  approachText:'We look at your face shape, eyes and natural brows, then suggest a design that feels like you.',
+  approachOneTitle:'We listen',approachOneText:'Tell us about your everyday makeup and what bothers you.',
+  approachTwoTitle:'We look closely',approachTwoText:'We check your eyes, skin and natural brows together.',
+  approachThreeTitle:'You approve the design',approachThreeText:'You see the design first and we adjust it until you’re happy.',
+
+  filmLabel:'CONSULTATION · TREATMENT',
+  filmTitle:'We talk first and confirm the design before we start.',
+  filmText:'Watch two short videos of a consultation and treatment at Beautydate.',
+
+  directorLabel:'03 — DIRECTOR SUYEON CHO',
+  directorMeta:'12 years in brows · 8 years running Beautydate',
+  directorEyebrow:'DIRECTOR · SUYEON CHO',
+  directorTitle:'12 years of experience, tailored to every face.',
+  directorText:'Suyeon takes time to study your features and natural brows and reviews the design with you before anything begins. She brings 12 years of semi-permanent brow experience and 8 years running her own studio.',
+  yearsService:'YEARS OF EXPERIENCE',yearsStudio:'YEARS IN BUSINESS',
+
+  processLabel:'04 — HOW IT WORKS',
+  processMeta:'From consultation to aftercare',
+  processTitle:'We listen before we start.',
+  step1Title:'Consultation',step1Text:'Tell us the look you want and what bugs you about your brows.',
+  step2Title:'Brow check',step2Text:'We look at your face shape, eyes, skin and natural brows together.',
+  step3Title:'Design approval',step3Text:'You see the shape before treatment and we adjust it to your liking.',
+  step4Title:'Treatment & aftercare',step4Text:'We follow the design you approved and walk you through aftercare.',
+
+  worksLabel:'REAL RESULTS',worksMeta:'Designs by Beautydate',
+  worksTitle:'See real results from our clients.',
+  worksText:'Results vary depending on your skin and natural brows.',
+  galleryFootnote:'Real client results. Individual results may vary.',
+
+  faqLabel:'05 — BEFORE YOU BOOK',
+  faqMeta:'Answers to common worries',
+  faqTitle:'Got questions? Start here.',
+  faqText:'What to know about pain and design before you decide.',
+  faqOneQ:'Does it hurt?',
+  faqOneA:'Everyone feels it differently. Share any worries during your consultation and tell us anytime if you feel uncomfortable during treatment.',
+  faqTwoQ:'What if my brows look too dark or unnatural?',
+  faqTwoA:'We review and adjust the design together before we begin. Final results also depend on your skin and natural brows.',
+  faqThreeQ:'Do I really need this?',
+  faqThreeA:'We start by talking about what bothers you and what you’d like to change. There’s no pressure to decide right away.',
+  faqFourQ:'How do touch-ups work?',
+  faqFourA:'Results vary from person to person. Message us on WhatsApp or Instagram before booking to check the touch-up period and price.',
+
+  recommendLabel:'HOW TO CHOOSE A STUDIO',
+  recommendMeta:'What to look for beyond price',
+  recommendTitle:'Before you choose a studio, check these.',
+  recommendOne:'Do they really listen to your concerns?',
+  recommendTwo:'Can you see and adjust the design before treatment?',
+  recommendThree:'Do they look at your features and natural brows?',
+  recommendFour:'Are prices and touch-up terms clear up front?',
+
+  visitMeta:'We look forward to meeting you',
+  visitTitle:'See you in Busan.',
+  visitText:'We’ll share our exact address and opening hours when you book.',
+  addressLabel:'ADDRESS',addressPending:'Busan · Korea (address shared when you book)',
+  hoursLabel:'HOURS',hoursPending:'Shared when you book',
+
+  contactTitle:'Not sure what suits you? Let’s talk first.',
+  contactText:'We’ll look at your brows and what you’re hoping for and answer any questions before you book.',
+  footerName:'Beautydate · Director Suyeon Cho',
+  footerNotice:'Busan · Korea · Tel +82-10-7597-8444',
+  backTop:'Back to top ↑',
+  mobileBookingPrompt:'Book · Ask us',
+
+  foreignEventKicker:'BEAUTYDATE · SPECIAL OFFER',
+  foreignPremiumTitle:'Brow Tattoo Special Offer',
+  foreignPremiumText:'For offer details and bookings, message us on WhatsApp or Instagram.',
+  lineInquiry:'Message on LINE',
+  whatsappInquiry:'Message on WhatsApp',
+  instagramInquiry:'Message on Instagram'
+});
+
 const names={'ko':'KO','ja':'日本語','zh-TW':'繁體','en':'EN'};
 const langButtons=[...document.querySelectorAll('[data-lang]')];
 document.querySelectorAll('.offer-price .offer-actions a').forEach((button,index)=>{
