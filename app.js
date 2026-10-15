@@ -182,7 +182,6 @@ function setLanguage(lang){
     const key=el.dataset.i18n;
     if(dict[key]){
       const safeText=dict[key].replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
-      const key=el.dataset.i18n;
       el.innerHTML=keepCommaWithFollowingText.has(key)
         ?safeText.replace(/([,，、])\s*/g,'$1\u00a0')
         :safeText.replace(/([,，、])\s*/g,'$1<br>');
