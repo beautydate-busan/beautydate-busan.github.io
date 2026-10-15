@@ -512,6 +512,22 @@ Object.assign(copy.en,{
   hoursPending:'Mon–Fri 10:00–20:00, Sat 10:00–18:00, Closed on Sundays',
   footerNotice:'Dong-gu · Busan · Tel +82-10-7597-8444'
 });
+Object.assign(copy.ko,{
+  addressPending:'부산 동구 중앙대로214번길 3-12 동서빌딩 504호',
+  visitText:'부산역 옆 아스티호텔 상가 1층 텐퍼센트 커피 맞은편 동남빌딩으로 들어와 엘리베이터를 타고 5층에서 내리신 후 안내판을 따라 오시면 돼요. 동서빌딩 쪽 입구는 계단만 있어요.'
+});
+Object.assign(copy.ja,{
+  addressPending:'釜山広域市 東区 中央大路214番キル 3-12 東西ビル 504号（地下鉄1号線 草梁駅2番出口から徒歩約4分）',
+  visitText:'KTX釜山駅のすぐそばです。ASTIホテル1階の「10% Coffee」向かいの東南ビル（동남빌딩）からエレベーターで5階へ上がり、案内表示に沿ってお越しください。東西ビル側の入口は階段のみです。タクシーでは「부산 동구 중앙대로214번길 3-12」とお見せください。'
+});
+Object.assign(copy['zh-TW'],{
+  addressPending:'釜山廣域市 東區 中央大路214番街 3-12 東西大樓 504號（地鐵1號線 草梁站2號出口步行約4分鐘）',
+  visitText:'就在 KTX 釜山站旁。從 ASTI 飯店1樓「10% Coffee」對面的東南大樓（동남빌딩）搭電梯到5樓，再依指標前往即可。東西大樓入口只有樓梯。搭計程車時可出示韓文地址「부산 동구 중앙대로214번길 3-12」。'
+});
+Object.assign(copy.en,{
+  addressPending:'Room 504, Dongseo Building, 3-12 Jungang-daero 214beon-gil, Dong-gu, Busan (4 min walk from Choryang Station Exit 2, Line 1)',
+  visitText:'We’re right next to Busan Station (KTX). For the elevator use the Dongnam Building (동남빌딩) entrance across from 10% Coffee on the ground floor of ASTI Hotel. Go up to the 5th floor and follow the signs. The Dongseo Building entrance has stairs only. Taxi drivers can use this address: 부산 동구 중앙대로214번길 3-12'
+});
 const names={'ko':'KO','ja':'日本語','zh-TW':'繁體','en':'EN'};
 const langButtons=[...document.querySelectorAll('[data-lang]')];
 document.querySelectorAll('.offer-price .offer-actions a').forEach((button,index)=>{
