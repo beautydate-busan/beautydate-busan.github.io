@@ -775,3 +775,15 @@ if(directorFilm){
   }else{directorFilmVisible=true;updateDirectorFilm()}
   document.addEventListener('visibilitychange',updateDirectorFilm);
 }
+
+document.addEventListener('click',event=>{
+  const target=event.target instanceof Element?event.target.closest('a,button'):null;
+  if(!target||typeof window.fbq!=='function')return;
+  const label=(target.innerText||target.getAttribute('aria-label')||target.dataset.i18n||'').replace(/\s+/g,' ').trim().slice(0,100);
+  const section=target.closest('section')?.id||'header';
+  window.fbq('trackCustom','ButtonClick',{
+    button_label:label,
+    language:document.documentElement.lang||'ko',
+    section
+  });
+});
