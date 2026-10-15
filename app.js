@@ -56,9 +56,12 @@ Object.assign(copy.ja,{directorText:'チョ・スヨンです。アートメイ�
 Object.assign(copy['zh-TW'],{directorText:'我是趙秀妍。從事半永久眉施作12年，經營 Beautydate 至今8年。一路接觸不同的臉型後，我更確信同一種眉型不會適合每個人。我會仔細觀察臉型、眼神與原有眉毛，再和你一起確認設計。',recommendMeta:'預約前可以確認的四項重點'});
 Object.assign(copy.en,{directorText:'I am Suyeon Cho. I have 12 years of experience in semi-permanent brow treatment and have run Beautydate for 8 years. Meeting many different faces has taught me that one shape does not suit everyone. I take time to consider your features and natural brows, then review the design with you.',recommendMeta:'Four things to check before booking'});
 Object.assign(copy.ko,{heroOfferLabel:'반영구 눈썹 이벤트'});
-Object.assign(copy.ja,{heroOfferLabel:'眉アートメイクイベント'});
-Object.assign(copy['zh-TW'],{heroOfferLabel:'半永久眉毛活動'});
-Object.assign(copy.en,{heroOfferLabel:'BROW DESIGN EVENT'});
+Object.assign(copy.ja,{heroOfferLabel:'プレミアムイベント'});
+Object.assign(copy['zh-TW'],{heroOfferLabel:'眉部尊榮專案'});
+Object.assign(copy.en,{heroOfferLabel:'PREMIUM EVENT'});
+Object.assign(copy.ja,{foreignEventKicker:'BEAUTYDATE · ご案内',foreignPremiumTitle:'プレミアムイベント',foreignPremiumText:'イベント内容やご予約について、お気軽にお問い合わせください。',lineInquiry:'LINEでお問い合わせ',instagramInquiry:'Instagramでお問い合わせ'});
+Object.assign(copy['zh-TW'],{foreignEventKicker:'BEAUTYDATE · 活動資訊',foreignPremiumTitle:'眉部尊榮專案',foreignPremiumText:'活動內容與預約方式，歡迎透過以下管道洽詢。',lineInquiry:'透過 LINE 洽詢',instagramInquiry:'透過 Instagram 洽詢'});
+Object.assign(copy.en,{foreignEventKicker:'BEAUTYDATE · SPECIAL OFFER',foreignPremiumTitle:'Premium Event',foreignPremiumText:'For event details and booking, please contact us.',lineInquiry:'Enquire on LINE',instagramInquiry:'Enquire on Instagram',whatsappInquiry:'Enquire on WhatsApp'});
 Object.assign(copy.ko,{
   heroTitle:'눈썹문신, 아직 고민 중이신가요?',
   heroText:'시술이 내 얼굴에 어울릴지, 조수연 원장과 먼저 상담해 보세요.',
@@ -201,7 +204,8 @@ function updateForeignBookingLinks(lang,dict){
   const line='https://line.me/R/ti/p/@209fyimp';
   const whatsapp='https://wa.me/message/ZYBILW5MJYEUH1';
   const messengerUrl=lang==='en'?whatsapp:line;
-  const messengerLabel=lang==='en'?dict.whatsappLink:dict.lineLink;
+  const messengerLabel=lang==='en'?dict.whatsappInquiry:dict.lineInquiry;
+  const socialLabel=lang==='en'?dict.instagramInquiry:dict.instagramInquiry;
   const setLink=(anchor,url,label)=>{
     if(!anchor)return;
     anchor.href=url;
@@ -213,12 +217,18 @@ function updateForeignBookingLinks(lang,dict){
   document.querySelectorAll('.hero-actions,.offer-actions,.contact-actions,.mobile-cta').forEach(group=>{
     const links=[...group.querySelectorAll('a')];
     setLink(links[0],isKorean?'https://pcmap.place.naver.com/place/1254580452/booking':messengerUrl,isKorean?dict.naverBooking:messengerLabel);
-    setLink(links[1],isKorean?'https://pf.kakao.com/_fQxjnT':instagram,isKorean?dict.kakaoInquiry:dict.instagramLink);
+    setLink(links[1],isKorean?'https://pf.kakao.com/_fQxjnT':instagram,isKorean?dict.kakaoInquiry:socialLabel);
     if(group.classList.contains('contact-actions')&&links[2]){
       if(isKorean)links[2].style.removeProperty('display');
       else links[2].style.display='none';
     }
   });
+  const foreignCardLinks=[...document.querySelectorAll('.foreign-service-card .offer-actions a')];
+  if(!isKorean){
+    setLink(foreignCardLinks[0],messengerUrl,lang==='en'?dict.whatsappInquiry:dict.lineInquiry);
+    setLink(foreignCardLinks[1],instagram,dict.instagramInquiry);
+    document.querySelector('.contact-offer')?.style.setProperty('display','none');
+  }else document.querySelector('.contact-offer')?.style.removeProperty('display');
   setLink(document.querySelector('.visit-booking'),isKorean?'https://pcmap.place.naver.com/place/1254580452/booking':messengerUrl,isKorean?dict.naverBooking:messengerLabel);
 }
 document.querySelector('.lang-current').addEventListener('click',()=>{
