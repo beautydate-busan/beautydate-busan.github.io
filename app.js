@@ -528,6 +528,7 @@ Object.assign(copy.en,{
   addressPending:'Room 504, Dongseo Building, 3-12 Jungang-daero 214beon-gil, Dong-gu, Busan (4 min walk from Choryang Station Exit 2, Line 1)',
   visitText:'We’re right next to Busan Station (KTX). For the elevator use the Dongnam Building (동남빌딩) entrance across from 10% Coffee on the ground floor of ASTI Hotel. Go up to the 5th floor and follow the signs. The Dongseo Building entrance has stairs only. Taxi drivers can use this address: 부산 동구 중앙대로214번길 3-12'
 });
+Object.assign(copy.ja,{visitTitle:'釜山で、お待ちしています。'});
 const names={'ko':'KO','ja':'日本語','zh-TW':'繁體','en':'EN'};
 const langButtons=[...document.querySelectorAll('[data-lang]')];
 document.querySelectorAll('.offer-price .offer-actions a').forEach((button,index)=>{
@@ -537,15 +538,18 @@ document.querySelectorAll('.offer-price .offer-actions a').forEach((button,index
 
 function setLanguage(lang){
   const dict=copy[lang]||copy.ko;
-  const keepCommaWithFollowingText=new Set(['approachText','approachTwoText','step2Text']);
+  const keepCommaWithFollowingText=new Set(['approachText','approachTwoText','step2Text','addressPending','visitText']);
+  const dropCommaAtBreak=new Set(['hoursPending']);
   document.documentElement.lang=lang;
   document.querySelectorAll('[data-i18n]').forEach(el=>{
     const key=el.dataset.i18n;
     if(dict[key]){
       const safeText=dict[key].replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
-      el.innerHTML=keepCommaWithFollowingText.has(key)
-        ?safeText.replace(/([,，、])\s*/g,'$1\u00a0')
-        :safeText.replace(/([,，、])\s*/g,'$1<br>');
+      el.innerHTML=dropCommaAtBreak.has(key)
+        ?safeText.replace(/[,，、]\s*/g,'<br>')
+        :keepCommaWithFollowingText.has(key)
+          ?safeText.replace(/([,，、])\s*/g,'$1\u00a0')
+          :safeText.replace(/([,，、])\s*/g,'$1<br>');
     }
   });
   document.querySelector('meta[name="description"]').content=dict.description;
