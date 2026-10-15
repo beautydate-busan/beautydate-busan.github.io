@@ -513,3 +513,9 @@ html:not([lang="ko"]) .hero-offer span::after{content:"";position:absolute;left:
 @media(prefers-reduced-motion:reduce){.visit-booking{animation:none}}
 
 html:lang(ko) body{word-break:keep-all;overflow-wrap:break-word}
+
+@media(min-width:651px){
+  .hero-portrait .hero-slide:first-child{object-position:center 10%}
+  .hero-portrait .hero-slide:nth-child(2){object-position:center 0%}
+  .hero-portrait video{object-position:center 10%}
+}
