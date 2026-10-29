@@ -529,6 +529,13 @@ Object.assign(copy.en,{
   visitText:'We’re right next to Busan Station (KTX). For the elevator use the Dongnam Building (동남빌딩) entrance across from 10% Coffee on the ground floor of ASTI Hotel. Go up to the 5th floor and follow the signs. The Dongseo Building entrance has stairs only. Taxi drivers can use this address: 부산 동구 중앙대로214번길 3-12'
 });
 Object.assign(copy.ja,{visitTitle:'釜山で、お待ちしています。'});
+Object.assign(copy.ko,{
+  heroEyebrow:'부산역 6번 출구 도보 3분 · 12년 경력',
+  heroTitle:'아직도 눈썹문신, 고민만 하고 계신가요?',
+  heroText:'누적 고객 1만 명이상, 수많은 후기가 증명하는 이유. 유행하는 모양보다, 지금의 나에게 가장 자연스러운 균형을 선물합니다.',
+  heroOfferLabel:'자연결눈썹 이벤트'
+});
+
 const names={'ko':'KO','ja':'日本語','zh-TW':'繁體','en':'EN'};
 const langButtons=[...document.querySelectorAll('[data-lang]')];
 document.querySelectorAll('.offer-price .offer-actions a').forEach((button,index)=>{
