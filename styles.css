@@ -520,5 +520,5 @@ html:lang(ko) body{word-break:keep-all;overflow-wrap:break-word}
   .hero-portrait video{object-position:center 10%}
 }
 
-html:lang(ko) .hero-message .eyebrow{font-size:12px;letter-spacing:.02em;line-height:1.45}
-@media(max-width:650px){html:lang(ko) .hero-message .eyebrow{font-size:10px;letter-spacing:0}}
+html:lang(ko) .hero-message .eyebrow{font-size:18px;font-weight:700;letter-spacing:.01em;line-height:1.4}
+@media(max-width:650px){html:lang(ko) .hero-message .eyebrow{font-size:16px;letter-spacing:0}}
